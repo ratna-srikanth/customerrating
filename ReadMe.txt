@@ -23,8 +23,23 @@ we are inserting only 5 records per table
 	Response: "Highest Movie Rating is : XXXXXXX"
 	
 	Endpoint3: http://localhost:10090/api/rest/customer/getAvgHighestRating
-	Response: "300 Warriors"
-
+	Response: if data is there in the table, we will get the response like below
+				{
+				    "id": 2,
+				    "firstName": "Chloe",
+				    "lastName": "O'Brian",
+				    "customerAverageRating": 3,
+				    "averageRating": 3
+				}
+	
+	if no data then
+		{
+		    "id": null,
+		    "firstName": null,
+		    "lastName": null,
+		    "customerAverageRating": null,
+		    "averageRating": null
+		}
 
 	
 	
